@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="7500.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="corona.SecondGUIController">
+   <children>
+      <ScrollBar fx:id="sc" layoutX="1276.0" max="7500.0" onDragDetected="#Translate" orientation="VERTICAL" prefHeight="7500.0" prefWidth="21.0" AnchorPane.leftAnchor="1279.0" AnchorPane.rightAnchor="0.0" />
+      <LineChart fx:id="LineChartCases" layoutX="-3.0" layoutY="51.0" prefHeight="1400.0" prefWidth="1260.0" title="Figure That Show Number Of Cases By Countries">
+        <xAxis>
+          <CategoryAxis label="Date" prefHeight="76.0" prefWidth="979.0" side="BOTTOM" fx:id="xCases" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="yCases" label="Cases" prefHeight="497.0" prefWidth="79.0" side="LEFT" tickUnit="250000.0" upperBound="2000000.0" />
+        </yAxis>
+      </LineChart>
+   </children>
+</AnchorPane>

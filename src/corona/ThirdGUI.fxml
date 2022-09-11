@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="796.0" prefWidth="1253.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="corona.ThirdGUIController">
+   <children>
+      <ImageView fitHeight="7037.0" fitWidth="1210.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="33.0" AnchorPane.topAnchor="10.0" />
+      <TableView fx:id="table" layoutX="28.0" layoutY="39.0" prefHeight="6961.0" prefWidth="1175.0">
+        <columns>
+          <TableColumn fx:id="Country" prefWidth="121.00003051757812" text="Country" />
+          <TableColumn fx:id="TotalCases" minWidth="0.0" prefWidth="132.00003051757812" text="Total Cases" />
+            <TableColumn fx:id="NewCases" minWidth="0.0" prefWidth="142.0" text="New Cases" />
+            <TableColumn fx:id="TotalDeaths" minWidth="7.0" prefWidth="139.0" text="Total Deaths" />
+            <TableColumn fx:id="NewDeaths" prefWidth="156.0" text="New Deaths" />
+            <TableColumn fx:id="Population" prefWidth="170.0" text="Population" />
+            <TableColumn fx:id="Mortality" prefWidth="75.0" text="Mortality" />
+            <TableColumn fx:id="AttackRate" prefWidth="75.0" text="Attack Rate" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <ScrollBar fx:id="sc" blockIncrement="20.0" layoutX="1220.0" layoutY="40.0" max="7000.0" onDragDetected="#Translate" orientation="VERTICAL" prefHeight="6952.0" prefWidth="29.0" unitIncrement="10.0" AnchorPane.bottomAnchor="71.0" AnchorPane.topAnchor="40.0" />
+   </children>
+</AnchorPane>
